@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="../css/all.min.css"> -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- BootStrap style -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-dark">
+        <div class="container py-4">
+            <a role="button" href="#" class="text-decoration-none">
+                <i class="fa-regular fa-sun d-inline-block"></i>
+                <div class="d-inline-block mx-2">
+                    <h6 class="d-inline-block">Weather</h6>
+                    <p>tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link home active mx-2 py-1 px-4" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  mx-2 py-1 px-4" aria-current="page" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  mx-2 py-1 px-4" aria-current="page" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  mx-2 py-1 px-4" aria-current="page" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  mx-2 py-1 px-4 contact" aria-current="page" href="./Pages/contact.html">Contact</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5">
+
+        <div class="container">
+            <div class="row my-lg-5">
+                <div class="col-12 my-4 input-groupp position-relative">
+                    <input id="search" type="text" name="search" placeholder="Find Your Location" class="form-control p-3 rounded-pill bg-black text-light border-0
+                        ">
+                    <button class="btn btn-primary position-absolute rounded-pill">Find</button>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-4">
+                    <div class="firstDay">
+                        <div class="title d-flex justify-content-between py-1">
+                            <p class="mx-2 " id="todayName">Sunday</p>
+                            <div class="d-flex">
+                                <p class="mx-2" id="todayNumber">22</p>
+                                <p class="mx-2" id="todayMOnth">january</p>
+                            </div>
+                        </div>
+                        <div class="content py-5 px-3">
+                            <h3 id="todayLocation">Cairo</h3>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="d-inline-block maindegree" id="todayTemp"><sup>o</sup>C</p>
+                                </div>
+                                <div><img id="todayIcon" src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt=""></div>
+                            </div>
+                            <p id="todayText">Clear</p>
+                            <div class="icons d-flex align-items-center">
+                                <img src="./imgs/icon-umberella.png" alt="" class="mx-3">
+                                <p id="umbrella">20%</p>
+                                <img  src="./imgs/icon-wind.png" alt="" class="mx-3">
+                                <p id="icon-wind">18km/m</p>
+                                <img  src="./imgs/icon-compass.png" alt="" class="mx-3">
+                                <p id="icon-compass">East</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center row2">
+                    <div class="secday">
+                        <div class="title py-1">
+                            <p class="nextDay">Sunday</p>
+                        </div>
+                        <div class="content p-4">
+                            <img class="Img" src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+                            <p class="maxTemp m-0 mt-4">16<sup>o</sup>C</p>
+                            <p class="minTemp m-0">12.7<sup>o</sup></p>
+                            <p class="textWeather my-lg-5">Patchy rain possible</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center row3">
+                    <div class="secday">
+                        <div class="title py-1">
+                            <p class="nextDay">Sunday</p>
+                        </div>
+                        <div class="content p-4">
+                            <img class="Img" src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+                            <p class="maxTemp m-0 mt-4">16<sup>o</sup>C</p>
+                            <p class="minTemp m-0">12.7<sup>o</sup></p>
+                            <p class="textWeather my-lg-5">Patchy rain possible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-2">
+        <div class="container">
+            <div class="row my-lg-5">
+                <div class="col-lg-8 input-groupp position-relative my-3">
+                    <input type="text" name="search" placeholder="Enter Your Email to Subscribe..."
+                        class="form-control p-3 rounded-pill bg-black text-light border-0">
+                    <button class="btn btn-primary position-absolute rounded-pill">Subscribe</button>
+                </div>
+                <div class="col-lg-3 px-5 d-flex justify-content-around align-items-center my-3">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+
+                </div>
+                <p class="m-4">
+                    Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Js Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Main js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
